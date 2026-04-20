@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: travel-planner
-          image: aeshnapreyasi/travel-planner:latest
+          image: aeshnapreyasi/travel-planner:v1
           imagePullPolicy: Always
           ports:
             - containerPort: 8501
