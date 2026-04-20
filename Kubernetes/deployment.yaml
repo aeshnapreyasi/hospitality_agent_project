@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: travel-planner-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: travel-planner
+  template:
+    metadata:
+      labels:
+        app: travel-planner
+    spec:
+      containers:
+        - name: travel-planner
+          image: aeshnapreyasi/travel-planner:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8501
