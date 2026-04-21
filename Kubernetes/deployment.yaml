@@ -18,3 +18,11 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 8501
+          
+          #  Environment Variable from Kubernetes Secret
+          env:
+            - name: GROQ_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: api-secrets
+                  key: GROQ_API_KEY
