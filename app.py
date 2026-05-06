@@ -2,7 +2,7 @@ import streamlit as st
 from crew_setup import crew
 from app_logger import log_event
 
-st.set_page_config(page_title="AI Hospitality Planner")
+st.set_page_config(page_title="AI Hospitality Planner Agent")
 
 st.title("AI Hospitality Travel Planner")
 
